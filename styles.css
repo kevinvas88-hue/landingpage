@@ -1,0 +1,70 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  display: block;
+}
+
+.navbar {
+  background-color: rgb(177, 252, 248);
+  color: white;
+  padding: 10px 0;
+  border-radius: 8px;
+}
+
+.navigation {
+  gap: 30px;
+  display: inline-flex;
+}
+
+.navigation li {
+  list-style: none;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: rgb(3, 66, 37);
+}
+
+.hero {
+  background-color: #83f5af;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.Projects {
+  padding: 16px;
+  background-color: #58ce54;
+  width: 300px;
+  box-sizing: border-box;
+  display: inline;
+}
+
+.project-grid > div {
+  width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  display: inline;
+}
+
+footer.footer {
+  background-color: #222;
+  color: white;
+  padding: 16px;
+  font-size: 14px;
+  text-align: center;
+}
