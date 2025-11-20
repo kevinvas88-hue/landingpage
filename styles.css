@@ -25,6 +25,12 @@ body {
 .navigation {
   gap: 30px;
   display: inline-flex;
+  cursor: pointer;
+}
+
+.navigation a:hover {
+  color: white;
+  background-color: rgb(118, 118, 235);
 }
 
 .navigation li {
@@ -33,12 +39,13 @@ body {
 
 .navigation li a {
   text-decoration: none;
-  color: rgb(3, 66, 37);
+  color: rgb(15, 225, 103);
+  transition: background-color 0.5s;
 }
 
 .hero {
   background-color: #83f5af;
-  padding: 50px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
@@ -52,36 +59,35 @@ body {
 }
 
 .project-grid {
-  display: flex;
-  flex-direction: colum;
+  display: flex-wrap;
+  flex-direction: column;
   width: 100%;
   align-items: center;
   padding: 1rem;
 }
 
 .project-grid > div {
-  width: 50%;
+  flex: 1 1 30%;
+  max-width: 30%;
   padding: 10px;
   box-sizing: border-box;
   background-color: #fff;
   border-radius: 8px;
   text-align: center;
-  display: inline;
   box-shadow: 0 4px 8px grey;
 }
 
 .project-grid img {
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  height: auto;
 }
 
 footer.footer {
   background-color: #222;
   color: white;
-  padding: 16px;
+  padding: 30px;
   font-size: 14px;
   text-align: center;
-  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
