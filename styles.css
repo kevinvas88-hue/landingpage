@@ -11,16 +11,15 @@ body {
   min-height: 100vh;
 }
 
-.main {
-  flex: 1;
-  display: block;
-}
-
 .navbar {
   background-color: rgb(177, 252, 248);
   color: white;
   padding: 10px 0;
   border-radius: 8px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .navigation {
@@ -43,22 +42,37 @@ body {
   text-align: center;
 }
 
-.Projects {
-  padding: 16px;
-  background-color: #58ce54;
+.hero img {
   width: 300px;
-  box-sizing: border-box;
-  display: inline;
+  height: 200px;
+}
+
+.Projects h2 {
+  text-align: center;
+}
+
+.project-grid {
+  display: flex;
+  flex-direction: colum;
+  width: 100%;
+  align-items: center;
+  padding: 1rem;
 }
 
 .project-grid > div {
-  width: 300px;
+  width: 50%;
   padding: 10px;
   box-sizing: border-box;
   background-color: #fff;
   border-radius: 8px;
   text-align: center;
   display: inline;
+  box-shadow: 0 4px 8px grey;
+}
+
+.project-grid img {
+  width: 300px;
+  height: 200px;
 }
 
 footer.footer {
@@ -67,4 +81,8 @@ footer.footer {
   padding: 16px;
   font-size: 14px;
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
