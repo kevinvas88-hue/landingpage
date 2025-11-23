@@ -1,0 +1,278 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+.sticky {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: rgb(206, 137, 33);
+}
+
+.logo {
+  text-decoration: none;
+  color: orangered;
+  font-size: 4em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.logo span {
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-weight: bold;
+  color: antiquewhite;
+}
+
+.navbar li {
+  margin: 10px;
+  font-size: 2em;
+  text-shadow: 3px 4px 2px orangered;
+  cursor: pointer;
+}
+
+.navbar li:hover {
+  box-shadow: 10px 10px 5px 0px rgba(191, 186, 72, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(191, 186, 72, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(191, 186, 72, 0.75);
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(216, 184, 5);
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+h1 {
+  font-family: "Pacifico";
+  font-size: 4rem;
+  color: #ff4500;
+  text-shadow: 2px 2px 4px antiquewhite;
+  letter-spacing: 2px;
+  padding-left: 360px;
+}
+
+.banner p {
+  font-size: 1.5em;
+  color: whitesmoke;
+}
+
+.venue {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 80px;
+}
+
+.venue-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.venue-text h2 {
+  font-family: "Pacifico";
+  color: brown;
+  font-size: 4em;
+  text-shadow: 2px 2px 4px orangered;
+}
+
+.venue-text p {
+  font-size: 1.5em;
+  color: orangered;
+}
+
+.venueimg img {
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+  justify-content: space-between;
+  border-top: 12px solid white;
+  border-right: 8px solid white;
+  border-left: 8px solid white;
+  border-bottom: 55px solid white;
+  box-shadow: 0 5px 35px lightgray;
+  margin: 40px;
+  cursor: pointer;
+}
+
+.venueimg img:hover {
+  box-shadow: 10px 10px 5px 0px rgba(191, 186, 72, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(191, 186, 72, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(191, 186, 72, 0.75);
+}
+
+.kudos {
+  display: flex;
+  flex-direction: column;
+  background-color: orangered;
+  align-content: center;
+  margin-top: 100px;
+}
+
+.shout-outs h2 {
+  display: flex;
+  justify-content: center;
+  font-family: "Pacifico";
+  font-size: 4rem;
+  color: brown;
+  text-shadow: 2px 2px 4px white;
+  letter-spacing: 2px;
+}
+
+.shout-outs h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  color: white;
+}
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.testimonials p {
+  background-color: white;
+  border-radius: 8px;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  box-shadow: 0 5px 35px grey;
+  cursor: pointer;
+}
+
+.testimonials p:hover {
+  box-shadow: 10px 10px 5px 0px rgba(191, 186, 72, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(191, 186, 72, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(191, 186, 72, 0.75);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  margin-top: 40px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+}
+
+.footer-links a {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.icons {
+  margin-bottom: 30px;
+}
+
+/* Contact Us page specific */
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid brown;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #f5a40d;
+  padding: 20px;
+  width: 50%;
+  height: 100hv;
+  box-shadow: 10px 10px 5px 0px grey;
+}
+
+.banner2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(144, 172, 19);
+}
+
+.cu-banner h2 {
+  font-family: "Pacifico";
+  font-size: 4rem;
+  color: #ff4500;
+  text-shadow: 2px 2px 4px antiquewhite;
+  letter-spacing: 2px;
+  padding-left: 100px;
+}
+
+.cu-banner p {
+  font-size: 1.5em;
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 600px) {
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .venue {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .testimonials {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .venue {
+    grid-template-columns: 1fr 1fr;
+  }
+}
